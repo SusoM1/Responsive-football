@@ -1,0 +1,30 @@
+/* header {
+    position: absolute;
+    width: 567px;
+    height: 427px;
+    left: 717px;
+    top: 2889px;
+    background-image: url("banner.png");
+} */
+.topnav {
+    float: right;
+    height: 44px;
+    width: 1160px;
+    left: 156px;
+    top: 42px;
+    border-radius: 0px;
+}
+.topnav .login-container {
+    float: right;
+}
+.topnav .login-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #555;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
