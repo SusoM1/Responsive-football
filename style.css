@@ -1,30 +1,317 @@
-/* header {
+* {
+    margin-left: 45px;
+
+    box-sizing: border-box;
+}
+.heading {
+    width: 1440px;
+    height: 550px;
+    left: 0px;
+    top: 0px;
+    background: #2d25a0;
+}
+.home-login-button {
+    display: flex;
+}
+
+.home-login {
+    display: flex;
+    margin-top: 4px;
+    list-style: none;
+    flex-direction: row;
+}
+.home-login a {
+    color: #ffffff;
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper {
+    display: flex;
+
+    justify-content: space-around;
+    padding-right: 50px;
+    width: 150px;
+    height: 56px;
+    margin-left: 550px;
+
+    margin-top: 42px;
+    color: #ffffff;
+    background-color: #e02c6d;
+}
+.login-wrapper .fas {
+    margin-right: 8px;
+}
+
+.banner-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner img {
+    height: 438px;
+    width: 500px;
+    left: 1299px;
+    margin-top: -50px;
+    border-radius: 0px;
+}
+.title h1 {
+    height: 130px;
+    width: 485px;
+    left: 156px;
+    padding: 0%;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: aliceblue;
+}
+.watch {
+    width: 179px;
+    height: 49px;
+    background-color: #e02c6d;
+    margin-top: 60px;
+    color: #ffffff;
+}
+
+/* ----------Top Players section-------- */
+.Top-players {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    width: 315px;
+    height: 474px;
+    /* align-items: flex-start;
+    padding: 15px;
+    left: 195px;
+    top: 70px; */
+}
+.players {
+    display: grid;
+    margin-top: 27px;
+    width: 315px;
+    height: 550px;
+
+    padding-right: 16px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players img {
+    width: 300px;
+    height: 256px;
+    margin: 16px;
+}
+.player-name {
+    font-family: Poppins;
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.details {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 16px;
+    /* align-self: stretch; */
+    /* margin: 10px 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-weight: 26px;*/
+    overflow-y: hidden;
+}
+
+/* ---------Bottom part------------- */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+.bottom1 {
+    position: absolute;
+    width: 466px;
+    height: 309px;
+    left: 182px;
+    top: 2948px;
+}
+.bottom2 img {
     position: absolute;
     width: 567px;
     height: 427px;
     left: 717px;
-    top: 2889px;
-    background-image: url("banner.png");
-} */
-.topnav {
-    float: right;
-    height: 44px;
-    width: 1160px;
-    left: 156px;
-    top: 42px;
-    border-radius: 0px;
+    top: 3000px;
 }
-.topnav .login-container {
-    float: right;
+.bottom-title {
+    position: static;
+    font: Poppins;
+    font-weight: 700;
+    font-size: 48px;
+    color: #0a0826;
 }
-.topnav .login-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background-color: #555;
-    color: white;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
+.copa {
+    top: 0px;
+}
+
+/* -----------Footer section------------ */
+
+.last-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    row-gap: 20px;
+
+    width: 483.87px;
+    height: 213px;
+    left: 475px;
+    right: 481.13px;
+    top: 3574px;
+    bottom: 63px;
+}
+
+.last-item img {
+    width: 328px;
+    height: 248px;
+    left: 16px;
+    top: 7082px;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+
+    width: 170px;
+    height: 32px;
+    right: 156.94px;
+}
+
+.copyright {
+    font: Poppins;
+    font-weight: 400;
+    padding-left: 140px;
+}
+
+@media only Screen and (max-width: 688px) {
+    /* mobile first */
+
+    .heading {
+        width: 560px;
+        height: 895px;
+        left: 0px;
+        top: 0px;
+        background: #2d25a0;
+    }
+    .home-login-button {
+        display: flex;
+        flex-direction: row;
+        column-gap: 209px;
+    }
+
+    .home-login::after {
+        position: absolute;
+        content: "\f0c9";
+
+        list-style: none;
+        color: cornflowerblue;
+        width: 24px;
+        height: 24px;
+    }
+    button.login-wrapper {
+        position: absolute;
+        height: 32.879119873046875px;
+        width: 89.97801971435547px;
+        left: 100px;
+        top: 23px;
+        border-radius: 0px;
+        padding: 7px, 18px, 7px, 18px;
+    }
+
+    .title {
+        width: 278px;
+        height: 138px;
+        left: 16px;
+        top: 112px;
+    }
+    .banner img {
+        height: 259.17144775390625px;
+        width: 329px;
+        margin-top: 154px;
+    }
+    .banner-title {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 360px;
+        height: 695px;
+    }
+
+    .home-login-button {
+        display: flex;
+    }
+    .Top-players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* bottom item */
+    .bottom {
+        float: left;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+    .bottom1 {
+        position: absolute;
+        height: 299px;
+        width: 329px;
+        left: 215px;
+        top: 7840px;
+        border-radius: 0px;
+    }
+    .bottom2 img {
+        height: 248px;
+        width: 328px;
+        left: 563px;
+        top: 7995px;
+    }
+
+    /* Footer Section */
+    .last-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        top: 8500px;
+        left: 39px;
+        right: 62px;
+        bottom: 187px;
+    }
+    .last-item img {
+        height: 63px;
+        width: 150px;
+        left: 200px;
+    }
+    .icon {
+        height: 32px;
+        width: 170px;
+        right: 98px;
+    }
+    .copyright {
+        height: 31px;
+        width: 500px;
+        left: 62px;
+        top: 7517px;
+    }
 }
